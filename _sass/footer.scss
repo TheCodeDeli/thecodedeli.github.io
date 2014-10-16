@@ -1,0 +1,35 @@
+.site-footer {
+  margin-top: 30px;
+  padding: 40px 0;
+  color: #999;
+  background-color: #F9F9F9;
+  border-top: 1px solid #E5E5E5;
+}
+
+.site-footer .social-media-list {
+  list-style: none;
+
+  .icon-spacer {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+  }
+
+  /**
+   * Icons
+   */
+  .icon {
+
+      > svg {
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          vertical-align: middle;
+
+          path {
+              fill: #828282;
+          }
+      }
+  }
+}

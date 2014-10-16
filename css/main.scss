@@ -3,47 +3,73 @@
 ---
 @charset "utf-8";
 
-
-
-// Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
-
-// Using media queries with like this:
-// @include media-query($palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+body {
+  font-family: 'Noto Sans', sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Radley', serif;
+}
+
+h1 { font-weight: 700; }
+h2 { font-weight: 400; }
+h3 { font-weight: 400; }
+
+p {
+  letter-spacing: 1px;
+  line-height: 1.55em;
+}
+
+.site-header {
+  background: url('http://uc2.cdn-stagebloc.com/5123/2014_1015_5123_1516.jpeg') no-repeat bottom center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+
+  height: 300px;
+}
+
+.logo {
+  display: block;
+  max-width: 400px;
+  margin: 40px auto 0;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.description,
+.description a {
+  color: #fff;
+}
+
+.description {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.2em;
+  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.description a {
+  border-bottom: 1px dotted #fff;
+}
+
+.description a:hover {
+  color: #eee;
+  border-bottom: 1px solid #eee;
+  text-decoration: none;
+}
+
+.post img {
+  max-width: 100%;
+  height: auto;
+}
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout",
+        "footer",
         "syntax-highlighting"
 ;
