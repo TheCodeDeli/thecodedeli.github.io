@@ -2,6 +2,7 @@
 layout: post
 title:  "OmniAuth::StageBloc"
 date:   2014-10-15 20:22:29
+disqus_identifier: 1
 categories: omniauth-stagebloc
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 title:  "Mocking Shopify OAuth for Testing"
 date:   2015-03-24 18:01:24
+disqus_identifier: 2
 categories: omniauth
 ---
 
